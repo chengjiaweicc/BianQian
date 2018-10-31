@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcd9d9"
+    android:padding="10dp"
+    >
+    <include layout="@layout/title"/>
+    <TextView
+        android:id="@+id/first_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="备忘录"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:paddingLeft="5dp"
+        />
+    <SearchView
+        android:id="@+id/find_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_bt3"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionGo"/>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
